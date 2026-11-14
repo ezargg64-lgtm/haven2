@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://pycb2fm8gpfk" path="res://assets/images/Pink Man/Jump (32x32).png" id="5_nvl01"]
 [ext_resource type="Texture2D" uid="uid://d3bvs46070w4t" path="res://assets/images/Pink Man/Run (32x32).png" id="6_ivps1"]
 [ext_resource type="Texture2D" uid="uid://c0v4sb7j2qf8" path="res://assets/images/Pink Man/Wall Jump (32x32).png" id="7_urp6f"]
+[ext_resource type="AudioStream" uid="uid://e6575ueol52l" path="res://assets/sounds/jump.wav" id="9_ur7pv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bwjto"]
 atlas = ExtResource("1_1jxqw")
@@ -279,7 +280,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_b88wv")
 }],
 "loop": 1,
-"name": &"jump",
+"name": &"jumping",
 "speed": 20.0
 }, {
 "frames": [{
@@ -320,7 +321,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_fddr8")
 }],
 "loop": 1,
-"name": &"run",
+"name": &"running",
 "speed": 20.0
 }, {
 "frames": [{
@@ -355,11 +356,13 @@ texture_filter = 1
 position = Vector2(40.00003, -23.99997)
 scale = Vector2(6.0625005, 5.96875)
 sprite_frames = SubResource("SpriteFrames_i84hf")
-animation = &"idle"
+animation = &"jumping"
 autoplay = "idle"
-frame = 8
-frame_progress = 0.8666007
+flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=555256677]
 position = Vector2(43.5, -10)
 shape = SubResource("RectangleShape2D_s3woa")
+
+[node name="JumpSound" type="AudioStreamPlayer2D" parent="." unique_id=1657816312]
+stream = ExtResource("9_ur7pv")
