@@ -328,9 +328,6 @@ position = Vector2(90, 387)
 
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=1660780094]
 
-[node name="player2" parent="." unique_id=1931276302 instance=ExtResource("2_ypoqj")]
-position = Vector2(90, 387)
-
 [node name="Apples" type="Node2D" parent="." unique_id=1958057699]
 
 [node name="apple" parent="Apples" unique_id=1602160712 instance=ExtResource("5_ssdv0")]
