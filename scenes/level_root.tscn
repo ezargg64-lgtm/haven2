@@ -325,17 +325,21 @@ tile_set = SubResource("TileSet_i84hf")
 [node name="player" parent="." unique_id=121021522 instance=ExtResource("2_ypoqj")]
 position = Vector2(90, 387)
 
-[node name="Snail" parent="." unique_id=2087929957 instance=ExtResource("4_1vg6f")]
-texture_filter = 1
-position = Vector2(189, 444)
+[node name="Apples" type="Node2D" parent="." unique_id=1958057699]
 
-[node name="apples" type="Node2D" parent="." unique_id=1958057699]
-
-[node name="apple" parent="apples" unique_id=1602160712 instance=ExtResource("5_ssdv0")]
+[node name="apple" parent="Apples" unique_id=1602160712 instance=ExtResource("5_ssdv0")]
 position = Vector2(283, 278)
 
-[node name="apple2" parent="apples" unique_id=320074616 instance=ExtResource("5_ssdv0")]
+[node name="apple2" parent="Apples" unique_id=320074616 instance=ExtResource("5_ssdv0")]
 position = Vector2(636, 257)
 
-[node name="apple3" parent="apples" unique_id=1745667935 instance=ExtResource("5_ssdv0")]
+[node name="apple3" parent="Apples" unique_id=1745667935 instance=ExtResource("5_ssdv0")]
 position = Vector2(996, 448)
+
+[node name="Enemies" type="Node2D" parent="." unique_id=388270117]
+
+[node name="Snail" parent="Enemies" unique_id=2087929957 instance=ExtResource("4_1vg6f")]
+position = Vector2(891, 461)
+
+[node name="Snail2" parent="Enemies" unique_id=515167355 instance=ExtResource("4_1vg6f")]
+position = Vector2(385, 465)

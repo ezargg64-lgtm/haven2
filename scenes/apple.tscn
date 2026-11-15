@@ -197,7 +197,8 @@ autoplay = "apple"
 position = Vector2(5.666667, 3.3333335)
 shape = SubResource("CircleShape2D_j7ynm")
 
-[node name="collectedsound" type="AudioStreamPlayer2D" parent="." unique_id=1126743882]
+[node name="CollectedSound" type="AudioStreamPlayer2D" parent="." unique_id=1126743882]
 stream = ExtResource("4_gart2")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="animation_looped" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_looped"]
