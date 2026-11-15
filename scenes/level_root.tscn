@@ -311,9 +311,10 @@ sources/0 = SubResource("TileSetAtlasSource_ypoqj")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=2007676035]
 texture_filter = 1
-offset_top = 3.0
-offset_right = 1288.0
-offset_bottom = 723.0
+offset_left = -847.0
+offset_top = -462.0
+offset_right = 2444.0
+offset_bottom = 826.0
 texture = ExtResource("1_1vg6f")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=290889513]
@@ -325,7 +326,15 @@ tile_set = SubResource("TileSet_i84hf")
 [node name="player" parent="." unique_id=121021522 instance=ExtResource("2_ypoqj")]
 position = Vector2(90, 387)
 
+<<<<<<< HEAD
 [node name="Apples" type="Node2D" parent="." unique_id=1958057699]
+=======
+[node name="Camera2D" type="Camera2D" parent="player" unique_id=1660780094]
+
+[node name="Snail" parent="." unique_id=2087929957 instance=ExtResource("4_1vg6f")]
+texture_filter = 1
+position = Vector2(189, 444)
+>>>>>>> f3209626a44c849dd4e6c71ba1eaec0c1f61d957
 
 [node name="apple" parent="Apples" unique_id=1602160712 instance=ExtResource("5_ssdv0")]
 position = Vector2(283, 278)
