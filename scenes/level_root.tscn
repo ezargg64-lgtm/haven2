@@ -326,15 +326,12 @@ tile_set = SubResource("TileSet_i84hf")
 [node name="player" parent="." unique_id=121021522 instance=ExtResource("2_ypoqj")]
 position = Vector2(90, 387)
 
-<<<<<<< HEAD
-[node name="Apples" type="Node2D" parent="." unique_id=1958057699]
-=======
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=1660780094]
 
-[node name="Snail" parent="." unique_id=2087929957 instance=ExtResource("4_1vg6f")]
-texture_filter = 1
-position = Vector2(189, 444)
->>>>>>> f3209626a44c849dd4e6c71ba1eaec0c1f61d957
+[node name="player2" parent="." unique_id=1931276302 instance=ExtResource("2_ypoqj")]
+position = Vector2(90, 387)
+
+[node name="Apples" type="Node2D" parent="." unique_id=1958057699]
 
 [node name="apple" parent="Apples" unique_id=1602160712 instance=ExtResource("5_ssdv0")]
 position = Vector2(283, 278)
